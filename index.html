@@ -288,7 +288,7 @@
 <p>$M=S(P(M))$ =&gt; $M=(M^emod(n))^dmod(n)$ =&gt; $M=M^{ed}mod(n)$ =&gt; $M^{ed}≡Mmod(n)$</p>
 <p>已知$ed≡1(modφ(n))$ =&gt; $ed=1+kφ(n)$，代入得：</p>
 <p>$M^{ed}=M^{1+kφ(n)}$</p>
-<ol>
+<ol start="2">
 <li><p>分情况讨论：</p>
 <ol>
 <li><p>$M,n$互质</p>
@@ -361,11 +361,11 @@
 <p>$y^2=x^3+ax+b$</p>
 <p>并且$4a^3+27b^2\ne0$</p>
 <p>如下是b=1，a从2到-3的椭圆曲线：</p>
-<p><img src="%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E6%8E%A2%E7%A9%B6.assets/640.webp" alt="img"></p>
+<p><img src="../typora-pic/640.webp" alt="img"></p>
 <p>易知椭圆曲线关于x轴对称。除了坐标系上曲线的点，椭圆曲线额外定义了一个无穷远理想点，记为0。</p>
 <p>即，椭圆曲线是由以下点组成：</p>
 <p>${(x,y)\in\mathbb{R}|y^2=x^3+ax+b,4a^3+27b^2\ne0}\cup{0}$</p>
-<p><img src="%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E6%8E%A2%E7%A9%B6.assets/image-20200623182112511.png" alt="image-20200623182112511"></p>
+<p><img src="../typora-pic/image-20200623182112511.png" alt="image-20200623182112511"></p>
 <h4 id="基于椭圆曲线的群定义"><a href="#基于椭圆曲线的群定义" class="headerlink" title="基于椭圆曲线的群定义"></a>基于椭圆曲线的群定义</h4><p>在一个集合中定义一个二元运算，即数学中的群。一个群由自身的集合和二元运算符组成。</p>
 <p>一个群满足下面前四个条件，满足第五个条件的群为阿贝尔群。（设群为$\mathbb{G}$，以定义一个加法“+”为例）</p>
 <ol>
@@ -382,20 +382,20 @@
 <li>点P的逆元是点P相对于x轴的对称点；</li>
 <li>加法运算规则：在椭圆曲线上，和一条直线相交的3个点P、Q和R，三点相加满足$P+Q+R=0$。$P+Q=-R$即，椭圆曲线上的两点相加的结果，还在椭圆曲线上。三点相加未规定顺序，即满足$P+(Q+R)=Q+(P+R)=R+(P+Q)=…=0$，满足交换律和结合律，该群是一个阿贝尔群。</li>
 </ul>
-<p><img src="%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E6%8E%A2%E7%A9%B6.assets/three-aligned-points.png" alt="三个对齐点"></p>
+<p><img src="../typora-pic/three-aligned-points.png" alt="三个对齐点"></p>
 <h4 id="椭圆曲线加法的计算"><a href="#椭圆曲线加法的计算" class="headerlink" title="椭圆曲线加法的计算"></a>椭圆曲线加法的计算</h4><p>对于上述基于椭圆曲线的群，因为$P+Q+R=0$，即$P+Q=-R$。通过连线P和Q，直线与曲线的交点即为R。</p>
-<p><img src="%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E6%8E%A2%E7%A9%B6.assets/point-addition.png" alt="点加法"></p>
+<p><img src="../typora-pic/point-addition.png" alt="点加法"></p>
 <p>考虑几种特殊情况：</p>
 <ul>
 <li>$P=0$或$Q=0$。定义了0为无穷远点，则不能基于该点画线。但定义了单位元0，所以有$P+0=0$或$Q+0=0$。</li>
 <li>$P=-Q$。因为两个点对称，则连线与曲线不再相交其他点，此时有$P+Q=-Q+Q=0$。</li>
 <li>$P=Q$。两点重合，则存在无数条直线经过这两点并与曲线相交于其他点。如果重合点为曲线切点，则切线会与曲线相较于某固定点R，此时有$P+Q+R=P+P+R=2P+R=0$.</li>
 </ul>
-<p><img src="%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E6%8E%A2%E7%A9%B6.assets/animation-point-doubling.gif" alt="当Q接近P时P + Q的结果"></p>
+<p><img src="../typora-pic/animation-point-doubling.gif" alt="当Q接近P时P + Q的结果"></p>
 <ul>
 <li>$P\ne Q$，并且不存在第三点相交。P或Q的连线是椭圆曲线的切线。如果P是切点，则有$P+P+Q=2P+Q=0$。</li>
 </ul>
-<p><img src="%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E6%8E%A2%E7%A9%B6.assets/640.gif" alt="img"></p>
+<p><img src="../typora-pic/640.gif" alt="img"></p>
 <h4 id="加法计算"><a href="#加法计算" class="headerlink" title="加法计算"></a>加法计算</h4><p>考虑最普通的情况，即一条直线与椭圆曲线相较于三个不同点P、Q和R。 </p>
 <p>设$P=(x_P,y_P),Q=(x_Q,y_Q)$为非对称点且非零，则$x_P\ne x_Q$，得到斜率：$m=\frac{y_P-y_Q}{x_P-x_Q}$。</p>
 <p>这条线与曲线的交点为$R=(x_R,y_R)$</p>
