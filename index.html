@@ -303,12 +303,12 @@
 <p>因为$k&lt;q$，且$q$是质数</p>
 <p>所以$(k,q)=1$</p>
 <p>根据费马小定理：</p>
-<p>$(k<em>p)^{q-1}≡1mod(q)$ =&gt; $(k</em>p)^{(q-1)<em>(p-1)<em>k}</em>(k</em>q)≡(k*q)mod(q)$</p>
-<p>又因$φ(n)=(p-1)<em>(q-1),ed=k</em>φ(n)+1$</p>
-<p>所以$(k<em>p)^{ed}≡(k</em>p)mod(q)$ =&gt; $(k<em>p)^{ed}=t</em>q+k<em>p$ =&gt; $(k</em>p)<em>((k</em>p)^{ed-1}-1)=t*q$</p>
+<p>$(k * p)^{q-1}≡1mod(q)$  =&gt;  $(k * p)^{(q-1) * (p-1) * k} * (k * q)≡(k * q)mod(q)$</p>
+<p>又因$φ(n)=(p-1) * (q-1),ed=k * φ(n)+1$</p>
+<p>所以$(k * p)^{ed}≡(k * p)mod(q)$ =&gt; $(k* p)^{ed}=t* q+k* p$ =&gt; $(k* p)* ((k* p)^{ed-1}-1)=t* q$</p>
 <p>则$t$能整除$p$（$q$是质数）</p>
 <p>令$t=t^{‘}*p$，则有：</p>
-<p>$(k<em>p)^{ed}=t^{‘}<em>p</em>q+k</em>q$</p>
+<p>$(k* p)^{ed}=t^{‘}* p* q+k* q$</p>
 <p>再将$M,n$代入得：</p>
 <p>$M^{ed}=t^{‘}*n+M$ =&gt; $M^{ed}≡Mmod(n)$</p>
 <p>得证</p>
